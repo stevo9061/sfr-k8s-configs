@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+spec:
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+      - name: backend
+        image: yourusername/backend:latest
+        env:
+        - name: DATABASE_HOST
+          value: db
+        - name: DATABASE_PORT
+          value: "3306"
+        - name: DATABASE_NAME
+          value: sfr
+        - name: DATABASE_USER
+          value: root
+        - name: DATABASE_PASSWORD
+          value: rootpassword
+        - name: KAFKA_HOST
+          value: kafka
+        ports:
+        - containerPort: 3000
