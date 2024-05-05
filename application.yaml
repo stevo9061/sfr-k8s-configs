@@ -9,7 +9,7 @@ spec:
   source: 
     repoURL: https://github.com/stevo9061/sfr-k8s-configs.git
     targetRevision: HEAD
-    path: .
+    path: dev
   destination:
     server: https://kubernetes.default.svc
     namespace: sfr-app
