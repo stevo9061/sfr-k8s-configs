@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: stefanbi/backend:${{ github.sha }}
+        image: stefanbi/backend:7d49de5b001ad32e46d3ebb00b06309154e22964
         env:
         - name: DATABASE_HOST
           value: db
