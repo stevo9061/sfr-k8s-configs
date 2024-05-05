@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: data
-        image: stefanbi/data:718d335ab3923a491d19ac999271e91154e2ce4a
+        image: stefanbi/data:1867f13930a681d5c3fd03eaf27cad3c567bee0b
         env:
         - name: KAFKA_HOST
           value: kafka
