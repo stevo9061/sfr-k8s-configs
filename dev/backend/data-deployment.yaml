@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: data
-        image: stefanbi/data:${{ github.sha }}
+        image: stefanbi/data:7d49de5b001ad32e46d3ebb00b06309154e22964
         env:
         - name: KAFKA_HOST
           value: kafka
