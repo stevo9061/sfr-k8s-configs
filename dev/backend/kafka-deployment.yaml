@@ -12,7 +12,7 @@ spec:
         app: kafka
     spec:
       containers:
-      - name: kafka
+      - name: kafka-container
         image: confluentinc/cp-kafka:latest
         env:
         - name: KAFKA_BROKER_ID
