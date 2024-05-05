@@ -13,6 +13,6 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: stefanbi/frontend:1867f13930a681d5c3fd03eaf27cad3c567bee0b
+        image: stefanbi/frontend:a5f2be11cd8aa7a48641b0e4677b91e2e8cd0ff5
         ports:
         - containerPort: 4200
