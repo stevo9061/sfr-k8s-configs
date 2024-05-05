@@ -13,6 +13,6 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: stefanbi/frontend:latest
+        image: stefanbi/frontend:${{ github.sha }}
         ports:
         - containerPort: 4200

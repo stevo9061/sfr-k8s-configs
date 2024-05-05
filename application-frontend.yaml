@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: myapp-argo-application
+  name: my-argo-frontend
   namespace: argocd
 spec:
   project: default
@@ -9,7 +9,7 @@ spec:
   source: 
     repoURL: https://github.com/stevo9061/sfr-k8s-configs.git
     targetRevision: HEAD
-    path: dev
+    path: dev/frontend
   destination:
     server: https://kubernetes.default.svc
     namespace: sfr-app
