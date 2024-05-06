@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: data
-        image: stefanbi/data:21ecc4a1902967ced3316a8dc70c79e2fe9884e4
+        image: stefanbi/data:d7d02c72e569ae103f41e55c8cb92630fc8bf049
         env:
         - name: KAFKA_HOST
           value: kafka-service
