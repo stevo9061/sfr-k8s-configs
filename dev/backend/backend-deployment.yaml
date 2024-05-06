@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: stefanbi/backend:d75415e72117ed331626697543473e39625d885b
+        image: stefanbi/backend:21ecc4a1902967ced3316a8dc70c79e2fe9884e4
         env:
         - name: DATABASE_HOST
           value: db
